@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--form_02.html -->
+<html lang="ko-KR">
+  <head>
+    
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta charset="utf-8">
+
+    <!--[if lte IE 9]
+        <script src="./ie/html5shiv-3.7.3/dist/html5shiv.min.js"></script>
+    </[endif]-->
+
+    <link re="shortcut icon" type="image/png" href="./favicon.png"> 
+
+
+    <title>웹기초이해하기</title>
+
+    
+
+
+    <style> </style>
+
+    </head>
+    <body>
+
+        <!-- layout -->
+        <h1>웹기초 이해하기</h1>
+        <h2><addr title="hiper text markup language version 5">
+            HTML5</addr>이전에 사용한 form 기능 이해하기2</h2>
+
+        <h2>form기능 이해하기2</h2>
+
+
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>입력형</legend>
+                
+                <label for="userId">아이디를 입력하세요</label>
+                <input type="text" id="userId" name="userId" value="" /> <br />
+
+                <label fro="userId">비밀번호를 입력하세요</label>
+                <input type="password" id="userPw" name="userPw" value="" /> <br />
+
+            </fieldset>
+    <!-- ================================== -->       
+
+            <fieldset>
+                <legend>선택형</legend>
+                <p>다음중 가장 괜찮은 사람을 고르시오</p>
+                
+                <ol>
+                    <li>
+                        <label></label>
+                        <input type="radio" id="guy_01" name="sel_01" value="" />
+                        <laver for="guy_01">이도형</laver>
+
+
+                  </li>
+                </ol>
+
+
+                <ol>
+                    <li>
+                        <label></label>
+                        <input type="radio" id="guy_02" name="sel_02" value="" />
+                        <laver for="guy_02">그린컴퓨터 수원강사</laver>
+
+
+                  </li>
+                </ol>
+
+
+                <ol>
+                    <li>
+                        <label></label>
+                        <input type="radio" id="guy_03" name="sel_03" value="" />
+                        <laver for="guy_03">시도웹</laver>
+
+
+                  </li>
+                </ol>
+
+
+
+                <ol>
+                    <li>
+                        <label></label>
+                        <input type="radio" id="guy_04" name="sel_04" value="" />
+                        <laver for="guy_04">웹디자인강사</laver>
+
+
+                  </li>
+                </ol>
+
+
+            <p>오늘 먹고싶은 음식을 선택하시오</p>
+            <ul>
+                <li>
+
+                 <input type="checkbox" id="selfood02" name="food01" value="1" />
+                <label for="selfood_01">치킨</label>
+                
+                </li>
+
+                <li>
+                <input type="checkbox" id="selfood03" name="food02" value="1" />    
+                <label for="selfood_02">떡볶이</label>
+              
+                </li>
+               
+
+                <li>
+                <input type="checkbox" id="selfood04" name="food03" value="1" />    
+                <label for="selfood_03">짬뽕</label>
+                
+                </li>
+                
+
+                <li>
+                <input type="checkbox" id="selfood05" name="food04" value="1" />    
+                <label for="selfood_04">탕수육</label>
+                
+                </li>
+                
+
+                <li>
+                <input type="checkbox" id="selfood06" name="food05" value="1" />    
+                <label for="selfood_05">자장면</label>
+                
+                </li>
+
+
+
+            </ul>
+                
+                
+
+
+            </fieldset>
+    <!-- ================================== -->
+            <fieldset>
+                <legend>버튼형 type</legend>
+                <!--  input type 형식에서 버튼기능은 laver 을 사용하지 않아도된다.  -->
+            <ul>
+                <li>
+                    <input type="reset" name="cancel" value="취소" />
+                </li>
+
+                <li>
+                    <input type="submit" name="ok" value="동의및전송" />
+                </li>
+
+                 
+                 <li>
+                    <input type="image" src="./favicon.png" alt="전송버튼에 대한 설명" name="ok" value="동의" />
+                </li>
+
+                 
+                 <li>
+                    <input type="file" name="data" value="" />
+                </li>
+
+
+                <li>
+                    <input type="button" name="btn" value="주소검색" />
+                </li>
+
+
+
+          </fieldset>
+    <!-- ================================== -->
+            <fieldset>
+                <legend>특수형</legend>
+                <!-- 관리자형식에 필요한 기능으로 사용자에게는 드러나지 않는 기능 -->
+                <input type="hidden" name="beforname" value="이전에 사용한 이름" />
+
+
+            </fieldset>
+    <!-- ================================== -->
+            <fieldset>
+                <legend>멀티형</legend>
+                
+                <label for="multitext">전송메세지</label>
+                <textarea cols="10" rows="30" name="multitext" value=""
+                 id="multitext" maxlength="" readonly="readonly">        
+                </textarea>
+
+
+                <label for="selproduct">원하는 상품을 선택하세요</label>
+
+            
+                <select name="selproduct" id="selproduct" multiple="2">
+
+            <optgroup label="전자기기">
+                <option value="스마트폰">스마트폰</option>
+                <option value="노트북">노트북</option>
+            </optgroup>
+
+            <optgroup label="문구">
+                <option value="볼펜">볼펜</option>
+                <option value="포스트잇">포스트잇</option>
+            </optgroup>
+
+            <optgroup label="기타">
+                <option value="텀블러">텀블러</option>
+                <option value="커피세트">커피세트</option>
+                <option value="수박쥬스">수박쥬스</option>
+            </optgroup> 
+            </select>  
+
+            <hr />
+
+
+            <button type="reset">취소버튼역할을 하는 요소</button>
+            <button type="submit">확인버튼 역할을 하는 요소</button>
+            <button type="button">기본 버튼역할을 하는 요소</button>
+            
+            <!-- <button>00</button> 사용시 기본타입은 submit -->
+
+            
+
+
+
+            </fieldset>
+        </form>
+   
+
+     
+
+        <!-- script -->
+
+        <script> </script>
+
+</body>
+</html>

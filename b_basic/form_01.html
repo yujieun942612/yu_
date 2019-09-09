@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--form_01.html -->
+<html lang="ko-KR">
+  <head>
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta charset="utf-8">
+
+    <!--[if lte IE 9]
+        <script src="./ie/html5shiv-3.7.3/dist/html5shiv.min.js"></script>
+    </[endif]-->
+
+    <link re="shortcut icon" type="image/png" href="./favicon.png"> 
+
+
+    <title>웹기초이해하기</title>
+
+    <!-- css =========== -->
+
+
+    <style> </style>
+    	
+ </head>
+ <body>
+    <!-- layout ============ -->
+
+    <h1>웹기초 이해하기</h1>
+    <h2>form</h2>
+    <p> form 이란 양방향 통신이 가능한 형식으로 필요한 기능을 입력 또는 선택했을 경우 <br />
+    </p>
+    <p><strong>예제</strong>:검색, id/pw sns 메신저 보내기 댓글달기 회원가입 주문 설문조사 동의서체크 </p>
+    <p><strong>form사용시 주의사항</strong>:백엔드 개발자와 협의를 많이하는 영역이기에 보다 더 정확하게 처리하는 것이 중요</p>
+    <hr />
+
+    <h3>form기본양식</h3>
+    <!-- form을 사용하겠다는 유무처리
+         metho: 정보를 다루는 성격- 공개(get),보안(post)
+                get:자료가 많다.오픈자료 쉽게접근가능 
+                post:필요한 자료만 있음 비공개 쉽게 접근 불가능
+         action:작성 및 처리한 자료를 넘겨주는 경로 ( url )  
+     -->
+    <form method="get" action="#">
+        <h4>구역 형태</h4>
+        <fieldset>
+            <legend>구역의 제목</legend>
+            
+            <laver for="your name">
+                <span class="hidden">사용자의</span>이름 
+                <span class="hidden"> 을 입력해 주세요</span>
+            </laver>
+            <input type="text" id="your name" name="" value=""  />
+            <!--
+                type: input 요소의 기능 형태를 설정 => 목적에 맞는  type을 선정 
+                id: html문서에서 한번만 사용이 가능한 이름 무언가의(lavel) 연결
+                name: action을 통해 전달되는 이름 관리
+                valye: 전달하려는 값을 저장하는 임시 공간 
+                input은 크기를 가질 수 있는 inline
+
+
+            -->
+
+
+        </fieldset>
+
+
+        <h4>장바구니</h4>
+        <fieldset>
+            <legend>장바구니 물품 항목</legend>
+        </fieldset>
+
+        <h4>배송주사</h4>
+        <fieldset>
+            <legend>주소지 선택</legend>
+
+        </fieldset>
+
+        <h4>결재시스템</h4>
+        <fieldset>
+            <legend>결재 방식을 선택</legend>
+        </fieldset>
+
+        <h4>주문선택</h4>
+        <fieldset>
+            <legend>주문 선택 유무</legend>
+        </fieldset>
+    </form>
+
+
+
+
+
+ </body>
+ </html>

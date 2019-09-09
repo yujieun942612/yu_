@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--form_03.html-->
+<html lang="ko-kr">
+<head>
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+	<meta charset="UTF-8">
+	 <!--[if lte IE 9]
+        <script src="./ie/html5shiv-3.7.3/dist/html5shiv.min.js"></script>
+    </[endif]-->
+
+	<link re="shortcut icon" type="image/png" href="./favicon.png"> 
+
+
+	<title>Document</title>
+
+	<style>
+		#searchBar{width: 900px;}
+	</style>
+
+
+</head>
+<body>
+	<!--layout-->
+	<h1>웹기초이해하기</h1>
+	<h2>form 기능이해하기 3-html 형식에 추가된 기능이해하기</h2>
+
+	<form action="#" method="get">
+		<fieldset>
+			<legend>자주사용하는 형식</legend>
+			<ul>
+				<li>
+				<label for="searchBar">검색</label>
+				<input type="search" id="searchBar" name="searchBar" value="" requied="requied" placeholder="검색하실 내용을 입력하세요." />
+				</li>
+
+				<li>
+				<label for="telnum">숫자</label>
+				<input type="tel" id="telnum" name="telnum" value="" requied="requied" ./>
+				</li>
+
+				<li>
+				<label for="urlText">웹 주소</label>
+				<input type="ure" id="urlText" name="urlText" value="" requied="requied" ./>
+				</li>
+
+				<li>
+				<label for="mailtext">이메일 입력</label>
+				<input type="email" id="mailtext" name="mailtext" value="" requied="requied" ./>
+				</li>
+
+			</ul>
+
+		</fieldset>
+
+		
+
+		<!-- ==================================================== -->
+
+
+
+		<fieldset>
+			<legend>아직은 브라우저 제약 많은 형식</legend>
+
+			<label for="date">날짜를 선택하는 기능</label>
+			<input type="month" name="date" id="date" value="" />
+		
+
+
+
+			<!-- 2019.9.5 현재기준 날짜 시간과 관련된 type 속성은 사용할수없다!(제약이 너무 많다.) -->
+
+
+				
+			
+
+
+		</fieldset>
+
+
+		<!-- ======================================================= -->
+
+			
+
+		<fieldset>
+			<legend>사용할수 있지만 그 기능이 현재 애매한 상태</legend>
+			<ul>
+				<li>
+				<label for="num">갯수입력</label>
+				<input type="number" id="num" name="num" value=""  min="1" max="20" step="4" />
+				</li>
+
+
+				<li>
+				<label for="ran">갯수입력</label>
+				<input type="range" id="ran" name="ran" value="" min="1" max="20" step="4" />
+				</li>
+
+				<li>
+				<label for="colorsel">갯수입력</label>
+				<input type="color" id="colorsel" name="colorsel" value="" />
+				</li>
+			
+				<li>
+				<label for="message">전달할말</label>
+				<input type="text" id="message" name="message" value="" list="messagesample" />
+
+
+
+				<datalist id="messagesample">
+					<option value="경비실에 맡겨주세요"></option>
+					<option value="우산"></option>
+				</datalist>
+					
+				</li>
+			</ul>
+
+
+		</fieldset>
+
+
+
+
+			
+		<!-- ======================== -->
+
+		<button type="submit"> 확인 및 전송</button>
+</body>
+</html>
