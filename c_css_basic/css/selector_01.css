@@ -1,0 +1,49 @@
+@charest "UTF-8";
+/* selector_01.css */
+
+h1{background-color:#777; color:#ff0;}
+h2{background-color:#07f; color:#fff;}
+
+.wrap{background-color:#fa0; color:#0af;}
+.con{border-width:3px border-style:solid;
+border-color:#333;}
+/* border-style:sold // dotted // dashed */
+
+#list{border-width:3px border-style:dotted;
+border-color:#faf;}
+#list >.red{color:#f9f;}
+
+/* 기본적으로 a요소는 자체 색이 별도로 존재*/
+
+#list li > yellow {color:#f90;}
+#list li > blue > a {color:#07f;}
+#list li > green > a {color:#0a0;}
+
+.box{background-color:#ddf;}
+.box li>a{color:#f70;}
+
+.bg1{background-color:#ff0;}
+.bg2{background-color:#00c;}
+.bg3{background-color:#a00;}
+
+/*
+전체 선택자:*을 이용하여 선택하면 모든 요소를 선택한다 라는 의미
+ex) *{color:#a00;}
+단, *로 선택하는 것은 사용하지 않는 부분까지 지정하게 되므로 시스템의 성능저하가 일어날수있다.
+그러므로 현재기준 으로는 권장하지 않음.
+
+type선택자:html문서의 요소를 직접 선택하는것
+ ex)body{}
+ 	html{}
+ 	h1{}
+ 	p{}
+ 	div{}
+
+ id/class: id=># class=>. 을 이용하여
+ 	해당 속성의 이름을 선택하여 사용하는것
+
+ 자손(find) 선택자:띄어쓰기로 구분하여 자손을
+ 	 선택하게 하는것.
+
+ 자식(children) 선택자: >를 이용하여 부모 자식을 구분 선택 하는것 
+
