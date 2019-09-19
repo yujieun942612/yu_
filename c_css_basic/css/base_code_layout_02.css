@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*layout_basic_01.css */
+
+#wrap{margin:0 auto; width: 960px; height: 1200px;
+background-color: #3cf;}
+
+#head{width:960px; height: 120px; background-color: blueviolet;}
+#view{width:960px; height:450px; background-color:#ff6;}
+#content{width:960px; height:500px;
+background-color: cornflowerblue;}
+#vob{width: 200px; height: 500px; background-color:#f99; float:left;}
+#list{width: 760px; height: 200px; background-color: darkorange; float:right;}
+#cont{width: 760px; height: 300px; background-color:#087; float:right;}
+#ccc{width: 380px; height: 300px; background-color: deepskyblue; float: left;}
+#jjj{width: 380px; height: 300px; background-color: gold; float: right;}
+#foot{width:960px; height:130px;
+background-color: darkgray;}

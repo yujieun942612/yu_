@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/*position_01.css */
+
+/* reset.css */
+
+html,body,
+h1,h2,h3,h4,h5,h6,hr,
+ul,ol,li,dl,dt,dd{margin:0; padding:0; border:0;}
+ul,ol,li{list-style: none;}
+
+
+/*common*/
+
+.clearfix:after,
+.clearfix:after{content:""; display:block; width: 0; height: 0;clear:both;}
+  
+
+/*layout*/
+body{height: 3000px;}
+#wrap{width: 800px; height: 1200px; margin:auto;
+background-color: #acf; padding:50px; box-sizing: border-box;
+background-image:linear-gradient(#acf,#5fc);}
+
+.position{width: 100%; height: auto; border: 2px
+solid #333; box-sizing: border-box; position: relative;}
+
+.position > li{width: 100px; height: 100px; text-align: center;
+line-height: 100px; font-size:1.2rem;
+font-weight: bold; float:left;}
+
+.basic{background-color: #555;}
+
+.static{background-color: #f0c;
+  position:static; top:200px; right:10000px; z-index:-5000;}
+ /*position:static;- 위치를 표기방법과, z-index 모두 표시안됨*/
+
+.fixed{background-color: #fc0;
+   position:fixed; top:100px; right:0; z-index:-100;}
+   /*position:fixed;-브라우저에서 어느위치든 상관없이 화면에 붙어서 고정시키는 상태*/
+
+.absolute{background-color: #0aa;
+position: absolute; top:100px; right:50px; z-index:200;}
+/*position:absolute;- 브라우저에서 원하는 위치에 배치가능
+스크롤시 위치에서 움직이지 않음으로 스크롤시 일반형태처럼 
+스크롤처리된다.*/
+
+/*자신의 조상에(부모격) 해당하는 아이의  position의 성격을 가지고 있으면 해당 개체에 종속된다.*/
+
+.relative{background-color: #aaf;
+position:relative; top:150px; left:50px; z-index:-100;}
+/*relative-브라우저에서 위치값으로 변경하지 않는한 변화는 없다.
+하지만  z-index,top,left,right,bottom,모두 적용이 가능*/
+
+
+.sticky{background-color: #cf0;
+ behavior:url("../ie/PIE/PIE.htc");
+top:10px; }

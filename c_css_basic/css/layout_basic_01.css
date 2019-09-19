@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*layout_basic_01.css */
+
+
+/* reset========*/
+html,body,h1,h2,h3,h4,h5,h6,hr{margin:0; padding:0;}
+hr{margin: 0; padding: 0; border:0; behavior: url(../ie/PIE/PIE.htc);}
+hr{border-top:1px solid #333;}
+
+header,main,footer,article,section,aside{display: block}
+container{display:block;}
+
+/* design */ 
+body{background-color: #337;}
+
+
+#box{margin:100px auto; width: 600px; height: auto;}
+
+#headbox{width: 100%; height: 100px; background-color: #f0a;}
+#mainbox{width: 100%; height: auto; background-color: #fff; }
+#mainbox::after,
+#mainbox::after{content: ""; display:block; width: 0; height: 0; clear: both; }
+
+.con_wrap{float:left; width: 70%; height: 300px;
+  background-color: #fff; }
+  .article_area{width: 100%; height: 150px;
+    background-color: #777; }
+  .con_area{width: 100%; height: 150px;
+    background-color: #077; }
+  
+.side_area{width:30%;height: 300px; background-color: #7fa; float:right;}
+
+#footbox{width: 100%; height: 100px; background-color: #0af;}
+
+
+
+/* 
+
+벤더 프리픽스: 아직 권고에 들지못하는 (표준으로 승인되지 않은 뜻) 기능들을 각 브라우저에서 사용할수있도록 내장되어 있다면 이를 강제로 쓰게 만드는 기능
+
+*/
+
+
+
+

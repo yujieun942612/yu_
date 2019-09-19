@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/*nhc.css */
+
+/* common */
+.clearfix:after,
+.clearfix::after{content:""; display:block; clear:both; width:0; height: 0;}
+
+  .hidden{display:block; overflow: hidden; position: absolute; width: 0; height: 0;}
+
+
+  /* layout*/
+
+  #wrap{width: 100%; height: 3600px; background-color: #999;}
+  
+
+  #headbox{position:relative; width:100%; height:auto; padding-top:40px; }
+    
+    #banner{position:relative; width: 100%; height: 80px; 
+      background-color: #fff;}
+      h1{ float:left; width: 280px; height: 80px; background-color: #777;}
+      .gnb{position:absolute;  top: 0; left:0; right:0; margin:auto;  width: 950px; height: 80px; background-color: blueviolet;}
+      .sitemap{float:right; width:240px; height: 80px;
+      background-color: chartreuse;}
+      
+
+    #top{position:absolute; top:0;  width:100%; height:40px; margin-top:0;}
+    .top_list{float: right; width: 350px; height: 40px; background-color: cornflowerblue; }
+      
+
+  #mainbox{width:100%; height: 3305px; 
+    background-color: cornsilk;}
+
+    .view{width:100%; height: 855px; background-color: #444;}
+      
+    .news{width:100%; height: 898px; background-color: #555;}
+      .news_area{width:100%; height: 80px; margin-top:30px; 
+      background-color:#fff;}
+      .news_box{width: 1198px; height:650px; margin:auto; margin-top:30px; background-color: darkkhaki;}
+
+
+    .media{width:100%; height: 853px; background-color: #999;}
+      .media_area{width:100%; height: 80px; 
+      background-color:#fff;}
+      h2{text-align: center;}
+      
+    .content{width:100%; height: 705px; background-color: #888;}
+      .content_area{width:100%; height: 80px; 
+      background-color:#fff;}
