@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/*nhc.css */
+
+/* common */
+.clearfix:after,
+.clearfix::after{content:""; display:block; clear:both; width:0; height: 0;}
+
+  .hidden{display:block; overflow: hidden; position: absolute; width: 0; height: 0;}
+
+
+  /* layout*/
+
+  #wrap{width: 100%; height: 3600px; background-color: #999;}
+  
+
+  #headbox{position:relative; width:100%; height:auto; padding-top:40px; }
+    
+    #banner{position:relative; width: 100%; height: 80px; 
+      background-color: #fff;}
+      h1{ float:left; width: 280px; height: 80px; background-color: #777;}
+      
+      .gnb{position:absolute;  top: 0; left:0; right:0; margin:auto;  width: 950px; height: 80px; background-color: blueviolet;}
+      
+      .gnb>ul{width: 100%; height: 100%;}
+      .gnb>ul>li{float:left; height: 100%; margin-right:51.4px; text-align: center; background-color:#f60;}
+      .gnb>ul>li:nth-child(1){width: 126px; height: 80px;  line-height: 80px;  }
+      .gnb>ul>li:nth-child(2){width: 91px; height: 80px; line-height: 80px;  }
+      .gnb>ul>li:nth-child(3){width: 122px; height: 80px; line-height: 80px; }
+      .gnb>ul>li:nth-child(4){width: 125px; height: 80px; line-height: 80px;  }
+      .gnb>ul>li:nth-child(5){width: 103px; height: 80px; line-height: 80px;  }
+      .gnb>ul>li:nth-child(6){width: 126px; height: 80px; margin-right:0; line-height:80px;}
+
+
+
+
+      .sitemap{float:right; width:240px; height: 80px;
+      background-color: chartreuse;}
+      
+
+    #top{position:absolute; top:0;  width:100%; height:40px; margin-top:0;}
+    .top_list{float: right; width: 350px; height: 40px; background-color: cornflowerblue; }
+    .title_box{position: absolute; width: 865px; height: 140px; background-color: cornsilk; 
+    }
+      
+
+  #mainbox{width:100%; height: 3305px; 
+    background-color: cornsilk;}
+
+    .view{width:100%; height: 855px; background-color: #444;}
+
+
+   .con_area{width: 100%; padding-top:30px; box-sizing: border-box;}
+   
+      
+    .news{width:100%; height: 898px; background-color: #555;}
+      .news_area{width:100%; height: 80px; margin:auto; background-color:#555;}
+        h2{width: 100%; height: 30px; background-color: #999;}
+      .news_box{ width: 1198px; height:650px; margin:auto; margin-top:30px; background-color: darkkhaki;}
+       
+      .info_box_01{ width:1198px; height: 350px; margin-bottom: 40px; background-color: aquamarine;}
+      
+      .info_board_01_back{float: left; width: 586px; height: 325px; background-color: blueviolet;}
+        .info_board_01{float:left;  width: 120px; height: 42px; margin-bottom:10px;  line-height: 42px; background-color: #fff;}
+        h3{text-align: center;}
+        .info_board_01_01{float:left; width: 120px; height: 42px; margin-bottom:10px;  line-height: 42px; background-color: #ff5;}
+        .info_board_02{float:left; width: 586px; height: 280px; background-color: #fff;}
+
+        /*============ info_board_01_back ==================*/
+
+        .info_board_02_back{float: right; width: 602px; height: 325px; margin-left:10px; background-color: cadetblue;}
+        .qick{float:left; width:120px; height: 42px; line-height: 42px; margin-bottom:10px; background-color: #fff;}
+        .popup{float:right; width:120px; height: 42px; line-height: 42px; margin-bottom:10px;  margin-right:160px; background-color: #ff5;}
+        .info_board_03{float:left; width: 280px; height: 280px; background-color: #fff;}
+        .info_board_04{float:right; width: 280px; height: 280px; background-color: #fff;}
+
+       .info_box_02{ width: 1198px; height: 300px;  background-color: #ff5;}
+       .info_board_05{float:left; width: 280px; height: 280px; margin-right:26px; background-color: #fff}
+       .info_board_06{float:left; width: 280px; height: 280px; margin-right:26px;  background-color: #fff}
+       .info_board_07{float:left; width: 280px; height: 280px; margin-right:26px;  background-color: #fff}
+       .info_board_08{float:right; width: 280px; height: 280px; background-color: #fff}
+        
+
+
+
+
+
+    .media{width:100%; height: 853px; background-color: #666;}
+      .media_area{width:100%; height: 80px; 
+      background-color:#666;}
+      h2{text-align: center;}
+      
+    .content{width:100%; height: 705px; background-color: #777;}
+      .content_area{width:100%; height: 80px; 
+      background-color:#777;}

@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/*css_basic_01.css */
+
+.size_check{width:800px;
+height:800px;
+margin:auto;
+background-color: #ccc;}
+
+.size_check > p {width:auto; height:auto; background-color: #0cc;}
+
+/*  
+  단위:1cm=>10mm=>x
+  임의 단위는 있다.!
+
+ ( 최초의 기본설정)
+ 16px = 12pt = 100% = 1 em = 1rem
+
+*/
+
+h3{margin:0; padding:1rem;
+background-color:#fff;}
+
+.size_check > ul {margin:0;padding:0; width: 100%; height: 300px; background-color: #fa0;}
+
+.size_check > ul >li{display:inline; width: 50px;height: 50px;
+  border-width: 5px;border-style:solid;
+  border-color:#333;
+  text-align:center; line-height:50px;list-style:none;}
+
+
+  /* display : 속성은 형태를 변형처리할때 사용.
+   -block(크기를 가짐, 아래로 쌓인다.) 
+   -inline(옆으로 나열 크기를 가질수없다.) 
+   -inline-block(크기와 옆으로 나열되는 것을 확인할수있다. 단점은 알수없는 공백이 생긴다.) 
+   none(강제로 사라지게 만드는 기능)
+   
+   float:옆으로 나열하게 만드는기능, inline요소일경우 float을 사용하면 강제로 block요소로 변경
+   -left(부모의 크기를 기준으로 왼쪽 부터 정렬,)
+   -right(부모의 크기를 기준으로 오른쪽으로 정렬)
+   
+   visibility:display속성과 유사한 기능을 가지고있다.하지만 기본 2가지의 속성을 가진다. 
+   -visible(display:block과 같은 보여지게 만드는 기능)
+   -hidden(display:none과 같은 사라지는 기능-display와 다른점은 위치하던 자리는 그대로 남아있다.)*/
+
+   .size_check > ul >li:first-child{background-color:#f07;}
+   .size_check > ul >li:nth-child(2){display:none;background-color:#165;}
+   .size_check > ul >li:nth-child(3){background-color:#f67;}
+   .size_check > ul >li:nth-child(4){visibility:hidden;background-color:#777;}
+   
+
+   .over{width: 80%; min-width: 500px; height: auto;
+  background-color: #0df; padding:1rem; box-sizing:border-box;}
+
+  .over>p{margin:auto; margin-bottom: 400px;
+  width:450px; height: 200px; 
+border-width: 2px; border-style: solid; border-color:#fa0;}
+
+.one{overflow:auto;}
+
+.two{overflow:hidden;}
+
+.tree{overflow:visible;}
+
+.four{overflow:scroll;}
+
+.five{overflow:auto; overflow:hidden;}
+
+
+.six{overflow:hidden;}
+.six>span{padding-right:20px;display:block; overflow:hidden; overflow-y:auto; width:100%;height:100%; background-color:#fff;}
+
+
+/*overflow:지정된 크기를 기준으로 내부의 영역이 넘친다면 어떻게 처리할것인가?를 판단하는 내용
+-hidden:숨기는 기능
+-visible:기본형,넘칠때 보이게 만드는 기능
+-auto: 자동으로 
+-scroll
+
+*/
+
+
+.over> .seven{height:30px; white-space:nowrap;text-overflow:ellipsis; overflow:hidden;}
+
+/*
+white-space:임의 공백이아닌, 의도하지않은 공백을 처리하는 방법
+-pre:실제 코드에서 작성한 형태대로 공백을 주어라.
+-preline:실제코드에서 작성한 줄바꿈 처리와 동일하게 해라.
+-nowrap:여백을 모두 삭제해라.
+-unset:크기에 맞게 줄바꿈 처리해라.
+-text-overflow:overflow와 유사하지만 넘치는 영역이 글자일 경우에 처리방법
+대체로는 overflow와 함께 사용한다.
+-ellipsis:넘칠경우 말줄임표처리
+unset:기본형으로 처리
+
+*/

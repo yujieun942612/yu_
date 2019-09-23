@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*basic_nhc_go_kr.css */
+
+/* 천연기념물 센터 data summury
+ *position 사용시 가운데 배치하는 방법:
+ 방법 1. margin:auto; top:0; bottom:0;  => 위 아래 가운데
+ 방법 2. margin:auto; left:0; right:0; =>좌 우 가운데
+
+ 방법 3. 
+ (높이값이 정해져 있을 경우) top:50%; margin-top- 높이값의 절반크기;
+ =>위 아래 가운데
+ 
+ (가로값이 정해져 있을 경우) left:50%; margin-left:- 가로값의 절반크기;
+ => 좌 우 가운데
+
+ 방법 4.(최신 브라우저일 경우) top:50% transform:translateY(-50%)  위 아래 가운데
+                            left:50% transform:translateX(-50%) 가운데 
+
+
+ */
+ 
+ @import url("./nhc/nhc_01_wrap.css");
+ @import url("./nhc/nhc_02_header.css");
+ @import url("./nhc/nhc_03_main_content.css");
+ @import url("./nhc/nhc_04_footer.css");
+
+
+
+
+
+
+  
+ 
+
+
+
+
+
+
