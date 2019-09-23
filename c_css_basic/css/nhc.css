@@ -18,6 +18,7 @@
     #banner{position:relative; width: 100%; height: 80px; 
       background-color: #fff;}
       h1{ float:left; width: 280px; height: 80px; background-color: #777;}
+<<<<<<< HEAD
       
       .gnb{position:absolute;  top: 0; left:0; right:0; margin:auto;  width: 950px; height: 80px; background-color: blueviolet;}
       
@@ -33,20 +34,27 @@
 
 
 
+=======
+      .gnb{position:absolute;  top: 0; left:0; right:0; margin:auto;  width: 950px; height: 80px; background-color: blueviolet;}
+>>>>>>> 97e944239303d0e4e2f82919de304839b1073664
       .sitemap{float:right; width:240px; height: 80px;
       background-color: chartreuse;}
       
 
     #top{position:absolute; top:0;  width:100%; height:40px; margin-top:0;}
     .top_list{float: right; width: 350px; height: 40px; background-color: cornflowerblue; }
+<<<<<<< HEAD
     .title_box{position: absolute; width: 865px; height: 140px; background-color: cornsilk; 
     }
+=======
+>>>>>>> 97e944239303d0e4e2f82919de304839b1073664
       
 
   #mainbox{width:100%; height: 3305px; 
     background-color: cornsilk;}
 
     .view{width:100%; height: 855px; background-color: #444;}
+<<<<<<< HEAD
 
 
    .con_area{width: 100%; padding-top:30px; box-sizing: border-box;}
@@ -92,3 +100,20 @@
     .content{width:100%; height: 705px; background-color: #777;}
       .content_area{width:100%; height: 80px; 
       background-color:#777;}
+=======
+      
+    .news{width:100%; height: 898px; background-color: #555;}
+      .news_area{width:100%; height: 80px; margin-top:30px; 
+      background-color:#fff;}
+      .news_box{width: 1198px; height:650px; margin:auto; margin-top:30px; background-color: darkkhaki;}
+
+
+    .media{width:100%; height: 853px; background-color: #999;}
+      .media_area{width:100%; height: 80px; 
+      background-color:#fff;}
+      h2{text-align: center;}
+      
+    .content{width:100%; height: 705px; background-color: #888;}
+      .content_area{width:100%; height: 80px; 
+      background-color:#fff;}
+>>>>>>> 97e944239303d0e4e2f82919de304839b1073664
