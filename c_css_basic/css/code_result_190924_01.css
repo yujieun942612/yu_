@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/*code_result_190924_01.css */
+
+
+#conbox{padding:1rem; background-color: #dfdfdf;}
+h3{margin-top:1rem; margin-bottom:0.5rem;}
+.box_wrap{margin:auto; width: 100%; min-width: 800px; border:1px solid #333; margin-bottom:1rem;}
+
+
+
+/* 1번풀이=====================*/
+
+#warp_01{width: 600px; height: auto; padding: 10px;
+background-color:#ccc;}
+#headbox_01{width: 100%; height:100px ; background-color:#fac; }
+#contentbox_01{width: 100%; height: 200px; background-color:#cca; }
+#footbox_01{width: 100%; height: 100px; background-color:#caf; }
+
+
+
+/* 2번풀이=====================*/
+
+#warp_02{width: auto; height: auto; padding: 10px;
+  background-color:#ccc;}
+  #warp_02:after, #wrap_02::after
+  {content:""; display:block; width: 0; height: 0; clear: both;}
+
+#headbox_02{float:left; width:20% ; height: 600px; background-color: #fac;}
+#contentbox_02{float:left; width:60% ; height: 600px; background-color:#cca; }
+#footbox_02{float:left; width: 20%; height: 600px; background-color:#caf }
+
+
+
+  /* 3번풀이=====================*/
+
+#wrap_03{width: 600px; height: 600px; margin:auto; 
+  padding: 10px; background-color:#ccc;}
+
+#headbox_03{float:left; width: 80%; height: 300px;  background-color: #fac; }
+#contentbox_03{float:left; width:80%; height: 300px;  background-color: #caf;}
+#footbox_03{float:right; width: 20%; height: 600px; margin-top:-300px; background-color: #7cf;}
+
+/* 4번풀이=====================*/
+
+.wrap{position: relative; width: 800px; height: 600px; background-color: #ff00aa;}
+.modal{position: absolute; top:30%; left:50%; margin-left:-250px;/*(-250을 주는 이유는 left:50% 준것은 왼쪽에서 50%부터 시작한다 이기에 madal이 갖고 있는 가로값의 반을 - 해주면 가운데에 위치하게 할수 있다.)*/ width: 500px; height: 150px; background-color: #0af;}
+
+
+
+/* 5번풀이=====================*/
+
+.wrap_02{position: relative; width: 800px; height: 600px; background-color: #ff00aa;}
+.side_indicator{position:absolute; top:50%; transform: translateY(-50%);  right:30px; width: 50px; height: auto; background-color: #0af;}
+
+.side_indicator>ul{width: 100%; height: auto; padding:10px; box-sizing: border-box; } 
+.side_indicator>ul>li{width: 30px; height: 30px; margin-bottom: 30px; background-color: #fff;}
+.side_indicator>ul>li:last-child{margin-bottom:0;}
+
+.side_indicator>ul>li>a{display:block; width: 100%; height: 100%; background-color:#fff; border-radius: 30px;}
+.side_indicator>ul>li>a>span{display:block; width: 0; height: 0; overflow: hidden;}
+
+
+
+/* 6번풀이=====================*/
+
+
+.wrap_03{position: relative; width: 800px; height: 600px; background-color: #fa6;}
+
+.side_indicator_02{position: absolute; right:30px;
+top:50%; transform: translateY(-150px); 
+width: 50px; height: 300px;
+min-height: 100px; background-color:#04f;}
+
+.side_indicator_02>ul{width: auto; height: auto;
+padding:10px; }
+.side_indicator_02>ul>li{width: 100%; height: 30px; margin-bottom: 30px; background-color: #fff;}
+
+.side_indicator_02>ul>li:last-child{margin-bottom: 0;}
+
+.side_indicator_02>ul>li>a{display: block; position: relative;  width: 100%; height: 100%; background-color: #863;
+border-radius: 100%;}
+.side_indicator_02>ul>li>a>span{display:block;
+position: absolute; top:0; right:70px; width:0; height: 100%; overflow:hidden; background-color:#0cf; text-align: right;
+padding:5px; transition:all 300ms ease; opacity:0;}
+
+.side_indicator_02>ul>li>a:hover>span,
+.side_indicator_02>ul>li>a:focus>span{background-color: #fff; opacity:1;}
+
+
+
+
+
+/* 7번풀이=====================*/
+
+.wrap_04{position: relative; width: 800px; height: 600px; background-color: #a88;} 
+
+.title_box{position: absolute; top:30%;  left:20px; z-index:200; width: 450px; height: 200px; background-color: rgba(255,5,255,0.5);  color:#fff;  padding:20px; box-sizing: border-box;}
+.title_box>h1{font-size:1.5rem; text-transform:capitalize; }
+.title_box>p{font-size:1rem;}
+
+.img_01{position: absolute; right: 220px; bottom:0; z-index:100; width: 250px; height: 400px; background-color: #5bb;}
+.img_02{position: absolute; right:20px; bottom:0; width: 250px; height: 500px; background-color: #9a7;}
+
+
+/* =================border-radius=====================*/
+
+.bdr{width: 100%; height:auto;}
+.bdr:after{content:""; display:block; clear: both;}
+.bdr>li{float:left; width: 150px; height: 150px; background-color: #fa7; margin:1rem;
+font-size:2rem; text-align: center; line-height: 30px;}
+
+.bdr>li:nth-child(1){border-radius:100px}
+.bdr>li:nth-child(2){ border-radius:10% 50%}
+.bdr>li:nth-child(3){width: 200px; border-radius:50%}
+.bdr>li:nth-child(4){border-radius:10px 30px 50px 0;}
+.bdr>li:nth-child(5){border-top-left-radius:20px;}
+.bdr>li:nth-child(6){border-radius:10px 30px 50px;}
+.bdr>li:nth-child(7){border-top-left-radius: 70px; border-bottom-left-radius:100px;}
+.bdr>li:nth-child(8){border-top-left-radius:50px 150px;}
+/*삼각형만들기*/
+.bdr>li:nth-child(9){box-sizing: border-box; border:75px solid transparent;
+  background-color: transparent; border-bottom-color:#0af;}
+
+/*margin:10px 50px; 위아래 왼오른*/
+/*border-radius:10px 50px; (상좌 하우) (상우 하좌)*/
+
+/* margin:10px 20px 30px 40px; 위 오른쪽 아래 왼쪽 */
+/* border-radius: 10px 20px 30px 40px; 상좌 상우 하우 하좌*/
+
+/*border-radius:
+모서리는 하나의 면만 존재하는 것이 아닌 두개의 선의 연결로 처리:위아래를 먼저 작성,
+왼오른 뒤에 작성
+------------------------------------------------
+border-top-left-radius:;
+border-top-rifht-radius:;
+border-bottom-right-radius:;
+border-border-left-radius:;
+*/
+
+
+.line_height{position: relative;  width: 400px; height: 100px; background-color: #999;}
+.line_height>p{position: absolute; top:50%; left:0; transform:translateY(-50%); width: 100%; height: auto;  background-color: #fff; text-align: center;}
+
+
+
+
+
+
