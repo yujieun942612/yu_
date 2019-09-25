@@ -19,8 +19,7 @@ font-family:'Nanum Gothic', sans-serif;}
 
 
 
-h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,
- p,pre,img{margin: 0; padding:0; border:0;} 
+h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,p,pre,img{margin: 0; padding:0; border:0;} 
 
 ul,ol,li{list-style: none;}
 
@@ -38,7 +37,8 @@ button:focus{outline:2px solid #f06;}
 
 hr{margin: 0; padding: 0; border-bottom: 1px solid #f06;}
 
-header,footer,aside,nav,section,article,figure,
+/*html5============================================== */
+main,header,footer,aside,nav,section,article,figure,
 figcaption{display:block;}
 
 /* form =============== */
@@ -47,5 +47,5 @@ legend{position: absolute; width: 0; height: 0; overflow: hidden;}
 input{box-sizing: border-box; text-indent: 0.5rem; cursor: pointer;}
 button{border:0; background-color: :#07f;
 color:#fff; cursor: pointer;}
-select,textarea{box-sizing: border-box;}
+select,text-area{box-sizing: border-box;}
 
