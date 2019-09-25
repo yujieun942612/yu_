@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*rwd_Test_01_result.css*/
+
+/** 반응형웹 기준
+ *pc: 760px ~ 960px
+ *tap: 481px *  768px 
+ *mob: ~ 480px
+ **/
+
+
+ #wrap{width: 100%; max-width: 60rem; height: auto; background-color:#fd4; }
+
+ #headbox{width: 100%; height: 9.375rem;  background-color:#c3f; }
+ h1{width: 100px; height: 100px; background-color: #8f8;}
+
+
+ #contentbox{width: 100%; height: auto; background-color:#2fb; }
+  #viewbox{width: 100%; height: 450px; background-color: #fdd}
+  #listbox{width: 100%; height: 600px; background-color: #765}
+  #infobox{display:none; width: 100%; height: 18.75rem; background-color: #351;}
+
+
+ #footbox{width: 100%; height: 6.25rem; background-color:#af1; }
+ #footbox>h2{width: 6.25rem; height: 100%;
+  background-color: aqua; transition: all 200ms ease;}
+
+/*================================*/
+
+ @media screen and (min-width:481px) and  (max-width:768px) {
+   #contentbox{height: auto;}
+   #viewbox{height: 18.75rem;}
+   #listbox{height: 25rem;}
+   #infobox{display:block;}
+ }
+
+ @media screen and (max-width:480px) {
+   #headbox{height: 6.25rem;}
+   h1{width: 100%; height: 100%;}
+
+
+   #contentbox{height: auto;}
+   #viewbox{height: 25rem;}
+   #listbox{height: 25rem;}
+ }

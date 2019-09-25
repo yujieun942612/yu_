@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+#headbox{width:60rem; height: 9.375rem; background-color: aqua;}
+
+.head_01{width: 6.25rem; height: 9.375rem; background-color: aquamarine;}
+.head_02{width:53.75rem; height: 9.375rem;
+background-color: chartreuse;}
+
+#mainbox{width: 60rem; height: 28.125rem;
+background-color: cornflowerblue;}
+
+#viewbox{width: 60rem; height: 37.5rem;
+background-color: blueviolet;}
+.view_01{float:left; width: 15rem; height: 37.5rem; background-color: darkgoldenrod;}
+.view_02{float:left; width: 15rem; height: 37.5rem; background-color:#777;}
+.view_03{float:left; width: 15rem; height: 37.5rem; background-color:#555;}
+.view_04{float:right; width: 15rem; height: 37.5rem; background-color:#999;}
+
+#footbox{width: 60rem; height: 6.25rem;
+background-color: darkred;}
+
+.foot_01{width: 6.25rem; height: 6.25rem;
+background-color: deeppink;}
