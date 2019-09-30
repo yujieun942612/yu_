@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/*background_basic_01.css */
+
+/**background data summary
+  *이미지를 배경에 처리해서 사용하는 기능
+  *기준경로는 css 문서를 작성하고 있는곳
+  *불러오는 이미지는 무조건 반복패턴으로 처리된다.
+  *기본 불러오는 이미지의 좌표는 부모기준 => x축0 y축0 
+  *단, position-attatchment:fixed; 에서는 좌표의 기준은 절대좌표(브라우저기준)
+
+  *background-image:; => 이미지를 불러오는 방법, 그라데이션 처리 하는 방법
+  *background-repeat:; => 전체반복, x축만 반복, y축만 반복, 반복하지 않음
+  *background-position:; => 좌표를 입력, (10px 40px / 10% 40%)  
+  *background-size:; => cover / contain / 100% auto
+  *background-attatchment:; => fixed / scrolled 
+**/
+
+
+
+
+
+#wrap{width: 100%; min-width: 1200px; height: auto; min-height: 600px; background-color: #ccc}
+  
+  #headbox{width: 100%; height: auto; border-bottom:3px solid #333; margin-bottom:1rem; }
+  
+  #contentbox{width: 100%; height: auto; padding: 1rem; box-sizing: border-box; background-color: #acf;}
+
+  .before_img{width: 400px; height: 200px; border:2px solid #fff;}
+  .img_01{position: relative; z-index: 100; width: 100%; height: 100%; background-color: #0cf; overflow:hidden;}
+  figcaption{font-size:2rem; font-weight: bold; color:#fff;}
+  .img_01 img{position: absolute; top:0; left:0; z-index: -100;  width: 100%; height: auto;}
+
+    .css_img{width: 400px; height: 300px; border:2px solid #357;
+    background-image:url("../../img/icons_01.png");
+    background-size:auto 40%; background-repeat:no-repeat; background-position:100% 100%;
+  background-color: #fff;}
+
+
+    .css_img2{
+    width: 50rem; height: 40rem; background-color: #ddd;
+    background-image:url("../../img/icons_01.png"), url(../../img/nature_01.jfif);
+    background-size:10% auto, 50% auto;
+    background-repeat:repeat-x, no-repeat;
+    background-position:0 0, 100% 100%;}
+
+    .css_img2 p {width: 0; height: 0; overflow:hidden;}
+
+      ul{width:100%; height: 200px;}
+      li{float:left; width: 110px; height: 110px; background-color: #fff;
+      margin:1rem; border-radius: 0.5rem;}
+      li>a{display: block; width: 100%; height: 100%;}
+      /*htmlreference.io*/
+
+      .hidden_wrap a>span{display:block; position: absolute; width: 0; height: 0; overflow:hidden;}
+
+      .css_img3>ul>li>a{background-image:url("../../img/icons_02.png");
+        background-repeat:no-repeat;
+        background-position:0 0;}
+
+        .css_img3 li:nth-child(1)>a{background-position:5px 5px;}
+        .css_img3 li:nth-child(2)>a{background-position:-240px -205px;}
+        .css_img3 li:nth-child(3)>a{background-position:-490px -400px;}
+        .css_img3 li:nth-child(4)>a{background-position:-994px -600px;}
+        .css_img3 li:nth-child(5)>a{background-position:-490px -800px;}
+
+        .css_img3 li>a{transition: all 1000ms ease;}
+        .css_img3 li:nth-child(1)>a:hover{background-position:-240px -205px; }
+        .css_img3 li:nth-child(2)>a:hover{background-position:-490px -400px; }
+        .css_img3 li:nth-child(3)>a:hover{background-position:-994px -600px; }
+        .css_img3 li:nth-child(4)>a:hover{background-position: -490px -800px;}
+        .css_img3 li:nth-child(5)>a:hover{background-position:5px 5px;}
+   

@@ -39,7 +39,7 @@ hr{margin: 0; padding: 0; border-bottom: 1px solid #f06;}
 
 /*html5============================================== */
 main,header,footer,aside,nav,section,article,figure,
-figcaption{display:block;}
+figcaption{display:block; margin:0; padding:0;}
 
 /* form =============== */
 form,fieldset,legend,{margin:0;,padding:0;,border:0;}
