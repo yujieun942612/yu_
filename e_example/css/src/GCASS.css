@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+#warp{width: 980px; height: 850px; background-color: aqua;}
+
+#headbox{width: 980px; height: 30px; background-color: #fff;}
+  .headbox_sub{float:right; text-align: center; width: 421px; height: 30px; background-color: #ccc;}
+  .head_01{float:left; width: 80px; height: 30px; color:#fff; background-color: #555;}
+  .head_02{float:left; width: 96px; height: 30px; color:#fff; background-color: #999;}
+  .head_03{float:right; width: 245px; height: 30px; color:#fff; background-color: #777;}
+
+  #viewbox{width: 980px; height: 709px; background-color: blueviolet;}
+  #view_sub{width: 980px; height: 709px; background-color: #ccc; }
+  
+  .view_01{float:left; padding-top:77px; padding-left:40px; width: 249px; height: 709px; box-sizing: border-box; background-color: #666;}
+    #GCASS{width:158px; height: 112px; border:2px solid #fff; text-align: center; margin-bottom: 35px; color:#fff;}
+    #GCASS > h2{margin-top:25px; text-align: center;   font-size:3rem;}
+    .view_01 > ul{color:#fff;} 
+    .view_01 > ul > li{margin-bottom: 24px;}
+
+  .view_02{padding-top:644px; float:right;width: 731px; height: 709px; background-color: #888; box-sizing:border-box;}
+  
+  .view_02_sub{float:right; margin-right:42px; width: 300px; height: 65px;  background-color: #444;}
+  .view_02-01{float:left; width: 96px; height: 65px;  color:#fff;            text-align: center; background-color: #111;}
+    .view_02-01 > h2{margin-top:20px; font-size:0.7rem;}
+
+  .view_02-02{float:right; width:204px; height: 65px; color: #111;    background-color:#fa0;}
+    .view_02-02 > h2{margin-top:20px; margin-left: 11px;  font-size:1.2rem; }
+
+
+  #footbox{width: 980px; height: 111px; background-color: bisque;}
+   .footbox_sub{float:right; margin-right:42px; width: 300px; height: 65px; background-color: #444;}
+   .foot_01{float:left; width: 96px; height: 65px;  text-align: center; background-color: #999;}
+     .foot_01 > h2{margin-top:20px; font-size:0.7rem; color:#fff;}
+
+   .foot_02{float:right; width:204px; height: 65px; color:#111; background-color: #777;}
+      .foot_02 > h2{margin-top:20px; margin-left: 11px; font-size:1.2rem; }
+
