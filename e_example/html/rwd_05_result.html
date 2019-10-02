@@ -20,7 +20,8 @@
   <link rel="stylesheet" href="../font/gyeonggi/stylesheet.css">
   <link rel="stylesheet" href="../css/base/reset.css">
   <link rel="stylesheet" href="../css/base/common.css">
-  <link rel="stylesheet" href="../css/src/rwd_05_result.css">
+  <!--<link rel="stylesheet" href="../css/src/rwd_05_result.css">-->
+  <link rel="stylesheet" href="../css/src/rwd_05-1_result.css">
   
   <!--[if lte IE 9]>
     <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
@@ -40,14 +41,34 @@
 <div id="wrap">
 
   <header id="headbox">
-    <div class="area_wrap"></div>
+    <div class="area_wrap">
+      <h1><a href="#"><span class="hidden">site name</span></a></h1>
+      <nav id="navbox">
+        <h2 class="hidden">navigation area</h2>
+        <ul>
+          <li>login</li>
+          <li>menu</li>
+        </ul>
+      </nav>
+    </div>
 
   </header>
 
   <main id="contentbox">
     <section class="view_area"></section>
-    <article class="tip_area"></article> 
-    <article class="info_area"></article> 
+    
+    <article class="tip_area">
+      <h2 class="hidden">부연설명 내용</h2>
+      <p><a><span>내용설명 창</span></a></p>
+    </article> 
+
+    <article class="info_area">
+      <h2 class="hidden">다양한 정보</h2>
+      <div class="info_01"></div>
+      <div class="info_02"></div>
+      <div class="info_03"></div>
+    </article> 
+  
   </main>
 
   <footer id="footbox">

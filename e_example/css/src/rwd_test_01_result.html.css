@@ -12,6 +12,7 @@
  * vw 높이 설정시: min-height, max-height를 사용여부를 판단할것             
  **/
 
+ /*공통영역*/
 
  #wrap{width: 100%; max-width: 60rem; height: auto; background-color:#fd4; }
 

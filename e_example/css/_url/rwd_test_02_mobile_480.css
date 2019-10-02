@@ -1,0 +1,15 @@
+/*rwd_test_02_mobile_480.css*/
+
+
+
+
+
+/*-design 기준:480px=============================================*/
+@media screen and (min-width:480px) and  (max-width:767px) {
+  /* #headbox=========================================================*/
+
+   /* #contentbox=========================================================*/
+  .info_02{background-color: #fa0; display:none;}
+    .info_03{background-color: #f50; display:none;}
+
+  /* #footbox=========================================================*/
