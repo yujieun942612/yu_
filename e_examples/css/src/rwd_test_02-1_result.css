@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import url("../_url/rwd_test_02_common.css");
+@import url("../_url/rwd_test_02_mobile_480.css");
+@import url("../_url/rwd_test_02_tablet_768.css");
+@import url("../_url/rwd_test_02_pc_960.css");
+
+
+/* rwd_test_02-1.result.css */
+/** Guide  data summary 
+- design 기준: 480px
+@media screen and (max-width:479px) {}
+- design 기준: 480px
+@media screen and (min-width:480px)  a nd (max-width:767px) {}
+- 디자인 기준 : 768px
+@media screen and (min-width:768px)  and (max-width:959px){}
+- design 기준: 960px 
+@media screen and (min-width:960px) {}
+**/
+/* ==========================================================  */
+
+
+ 
