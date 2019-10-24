@@ -1,0 +1,13 @@
+//_slide_01.scss
+
+@import "../_basic/var";
+@import "../_basic/mixin";
+@import "../_basic/etc";
+
+
+///--------------------------------------------
+
+.slide_temp{width: 90%; @include px(min-width, 1200); height: 700px; margin: auto; 
+  border: $border1; background-color: $sample;}
+
+  
