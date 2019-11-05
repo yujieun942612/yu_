@@ -1,0 +1,56 @@
+<!-- slideAll_viewBox.html -->
+<h2>slide 기능 만들기</h2>
+<div class="slide_form">
+  <div class="slide_wrap">
+    <div class="slide_01">
+      <h3>광고 제목 01</h3><div><a href="#">link</a></div>
+    </div>
+    <div class="slide_02">
+      <h3>광고 제목 02</h3><div><a href="#">link</a></div>
+    </div>
+    <div class="slide_03">
+      <h3>광고 제목 03</h3><div><a href="#">link</a></div>
+    </div>
+    <div class="slide_04">
+      <h3>광고 제목 04</h3><div><a href="#">link</a></div>
+    </div>
+    <div class="slide_05">
+      <h3>광고 제목 05</h3><div><a href="#">link</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="test">
+  <ul>
+    <li><a href="#"><span class="t">text</span></a></li>
+    <li><a href="#"><span>text</span></a></li>
+  </ul>
+</div>
+<script>
+  $('.t').css({color:'#f00'});
+
+// parentsUntil : 부모(선택된 상위) 선택자 제외한 자식까지
+// closest : 부모(상위포함) 선택자만 
+
+
+/*
+document.write(1 + '<br>');
+document.write(2 + '<br>');
+document.write(3 + '<br>');
+document.write(4 + '<br>');
+document.write(5 + '<br>');
+*/
+
+for(let i=0; i < 15; i++){
+  if(i < 9){
+    document.write( '0' + (i+1) + '<br>');
+  }else{
+    document.write( (i+1) + '<br>');
+  }
+}
+
+
+</script>
+

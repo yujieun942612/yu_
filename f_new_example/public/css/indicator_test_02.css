@@ -1,0 +1,30 @@
+#wrap{width: 100%; height: 100%; background-color: #afa;}
+#slide_temp{position: relative; width: 450px; height: 320px; 
+}
+
+.slide_btn{}
+.indicator{position: absolute; left:50%; bottom: 0; 
+width: 150px; height: 40px; margin-left: 800px;} 
+.indicator>li{float:left; width: 40px; height: 40px; 
+  margin-left: 10px; 
+}
+.indicator > li:nth-child(1) { margin-left: 0; }
+.indicator > li > a { display: block; width: 100%; height: 100%; background-color: #fff; border-radius: 100%; }
+.indicator > li > a span { display: block; width: 0; height: 0; overflow: hidden; }
+.indicator > li.active > a { background-color: #666666; }
+
+.product{width: 100%; height: 250px;  margin-left: 800px; 
+ overflow: hidden; background-color: #c14;}
+.product>ul{width: 300%; height: 100%; 
+background-color: #ccc;}
+.product > ul > li { float: left; width: 33.33333%; height: 100%; box-sizing: border-box; padding: 20px; }
+
+.product > ul > li > a { display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; }
+
+.product > ul > li > a > span { display: block; width: 0; height: 0; overflow: hidden; }
+
+.product > ul > li:nth-child(1) > a { background-image: url("../img/slide_test_01/slide_01.png"); }
+
+.product > ul > li:nth-child(2) > a { background-image: url("../img/slide_test_01/slide_02.png"); }
+
+.product > ul > li:nth-child(3) > a { background-image: url("../img/slide_test_01/slide_03.png"); }

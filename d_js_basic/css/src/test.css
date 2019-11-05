@@ -14,7 +14,8 @@ background-repeat: no-repeat;}
   border-bottom:1px solid #333;}
 #menubox>ul{position: relative; float: left; width: 100%; height: auto;
   margin-left: 250px; margin: auto; }
-  #menubox>ul::before{content:" "; display: block; width: 100vw; height: 100%; margin-left:-50vw; position: absolute; bottom:0; left: 50%; z-index: -100; background-color: #fff; }
+  #menubox>ul::before{content:" "; display: block; width: 100vw; height: 100%;  
+  /*  margin-left: -50vw; */ position: absolute; bottom:0; /* left: 50%; */ z-index: -100; background-color: #fff; }
 #menubox>ul>li{float: left; width: 250px; height: auto;  margin-left: 50px; }
 #menubox>ul>li>dl{width: 250px; height: auto;}
 #menubox>ul>li>dl>dt{display:block; width: 250px; height: 65px;}
