@@ -1,0 +1,77 @@
+	<!DOCTYPE html>
+  <!-- 문서이름.html -->
+  <html lang="ko-KR">
+  <head>
+    <noscript>
+      <p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다.<br />
+      자바스크립트의 기능을 활성화 해주세요.</p>
+      <p><a target="_blank"href="http://enable-javascript.com/ko/">자바스크립트 활성화 처리하기</a></p>
+    </noscript>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="웹페이지 실습에 따른 목차 구성">
+    <meta name="keyword" content="html,css,js,web,design,웹디자인,xido,시도웹">
+    <meta name="author" content="xido 강사">
+    <meta name="generator" content="illustrator,photoshop,sublimetext,vscode">
+  
+      <!--<link rel="stylesheet" href="../font/web_gyeonggi/stylesheet.css">-->
+      <link rel="stylesheet" href="../css/base/reset.css">
+      <link rel="stylesheet" href="../css/base/common.css">
+      <link rel="stylesheet" href="../css/slide_indi_and_btn.css">
+      <!--<link rel="stylesheet" href="../font/fontweresome/css/all.css">-->
+      <link rel="shorcut icon" herf="favicon.png" type="image/png">
+      <link rel="apple-touch-icon" herf="favicon.png" >	
+      <!--[if IE]>
+        <script src="../ie/html5shiv/dist/html5shiv.js"></script>
+        <script src="../ie/PIE/PIR.js"></script>
+        <script src="../ie/Respond/dest/respond.min.js"></script>
+      <![endif]-->
+  
+    <title>문서제목</title>
+  </head>
+  <body>
+    <!--layout====================================================================  -->
+    <div id="wrap">
+      <h1></h1>
+      <div id="slide_01">  </div>
+      <div id="slide_02">  </div>
+    </div>
+    <!-- scropt======================================= -->
+      <script src="../js/base/jquery-3.4.1.min.js"></script>
+      <script src="../js/base/jquery-ui.min.js"></script>
+      <script src="../js/src/slide_indi_and_btn.js"></script>
+      <script>
+        (function($){
+          let data =  '../data/slide_indi_btn.json';
+          let img  = '../img/slide_02/';
+          $('#slide_01').myIndiSlide(data,img);
+          $('#slide_02').myIndiSlide(data,img);
+        })(jQuery);
+      </script>
+      
+      
+      <script>
+      let ww=$(window).outerWidth();
+      //브라우저 크기에 따른기능
+
+      const viewBrowser =function(ww){
+        if(ww <= 480){
+        }else if(ww >480 && ww <=1280){
+        }else if(ww > 1280 && ww <= 1600){
+        }else{} }; viewBrowser(ww);
+
+      // 사이즈 변경시 새로고침
+      $(window).on('resize',function(){
+        let nw =$(window).outerWidth();
+        if(ww !==nw){
+          location.reload();
+          viewBrowser(ww);
+        }
+      });
+      </script>
+      
+
+  </body>
+  </html>

@@ -1,0 +1,57 @@
+
+#wrap{}
+h1{text-align: center; font-size:3rem; border-bottom: 1px solid #000;}
+
+
+#joinBox{width:460px; height: auto; min-height: 500px; margin: 3rem auto; }
+#joinBox form{width: 100%; height: auto;}
+/*-----------------------------------------------------*/
+.input_area{width: 100%; height: auto; min-height: 200px; 
+  background-color: #ffa;}
+
+  .input_area>ul{width: 100%; height: auto;}
+  .input_area>ul>li{width: 100%; height: auto; margin-bottom: 10px; 
+  background-color: #acf;}
+  .input_area>ul>li>dl{width: 100%; height: 46px; border: 1px solid #777;
+  box-sizing: border-box;}
+  
+  .input_area dt{float: left; width: 44px; height: 100%; 
+  border-right: 1px solid #777; box-sizing: border-box; }
+  .input_area dd{float: left; width: calc(100% - 44px); height: 100%;}
+
+  .input_area .narr{display: none; color:#f00; width: 100%; height: auto; min-height: 15px; margin-top: 5px; background-color: #fff;}
+
+  .input_area dt>label{display: block; width: 100%; height: 100%; font-size: 2.2rem;
+  line-height: 1; padding: 0; text-indent: 0; text-align: center;}
+  .input_area dd>input{width: 100%; height: 100%; border:0;}
+
+
+  .input_area>ul>li.error dl{border-color:#f00;}
+  .input_area>ul>li.error .narr{display: block;}
+/*span처리할땐 display:block;를 꼭 해주기*/
+
+/*-----------------------------------------------------------*/
+
+
+ .confirm_area{width: 100%; height: auto; padding-top: 1rem;}
+ .confirm_area>input[type="submit"]{width: 100%; height:52px; border: 0;
+  border-radius: 3px; box-shadow:inset 0 -2px 0 rgba(0,0,0,0.5); background-color: #0074e9; font-weight: bold; font-size: 1.2rem;}
+ .confirm_area>p{color:#333;}
+ .confirm_area>p>em,
+ .confirm_area>p>strong{font-weight: bold; font-style: normal;}.confirm_area>p>button{background-color: transparent; padding: 0;
+text-decoration: underline; color:inherit; font-size: inherit;}
+
+/*inherit-fontsize, color를 부모를 따라가라!*/
+
+#joinBox .terms{width: 100%; height: auto;}
+#joinBox .terms>div{display: none;}
+
+/*=========================================*/
+
+#footBox,
+#footBox address,
+#footBox address >p{width: 100%; height: auto; text-align: center;
+font-style: normal;}
+#footBox address .part_01{text-transform: capitalize;}
+#footBox address .part_02{text-transform: uppercase;
+color:#fa0; }

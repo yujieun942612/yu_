@@ -1,0 +1,27 @@
+#wrap{width: 100%; height: 1000px; background-color: #ccc;}
+#loginbox{width: 500px; height: 500px; background-color: #cac;}
+#loginbox_01{width: 100%; height: 200px;  border-bottom: 1px solid #333;
+  padding-top: 30px; box-sizing: border-box;   background-color: #cfc;}
+#loginbox h2{font-size: 1.5rem; text-align: center; margin-bottom: 40px; }
+#snsbox{width: 200px; height: 50px; margin: auto;}
+.sns_01{float: left; width: 50px; height: 50px; background-color: #fff;}
+.sns_02{float: left; width: 50px; height: 50px; margin-left: 25px; background-color: #fff;}
+.sns_03{float: left; width: 50px; height: 50px; margin-left: 25px; background-color: #fff;}
+
+#loginbox_02{width: 100%; height: 300px; padding-top: 50px; 
+  padding-left: 40px; box-sizing: border-box; background-color: #a71;}
+#id_pw_box{float: left; width: 300px; height: 100px;}
+.id_box{width: 300px; height: 50px; border: 1px solid #333;  background-color: #faa;}
+.pw_box{width: 300px; height: 50px;  border: 1px solid #333; background-color: #faa;}
+.login_gobox{float:left; width: 100px; height: 100px; padding-top: 30px;
+  box-sizing: border-box;
+  margin-left: 10px; text-align: center; font-size: 1.5rem;
+  border: 1px solid #333; background-color: #ccf;}
+  
+
+.signup{float:left; width: 110px; height: 20px; margin-top: 30px; background-color: #ffa;}
+.register{float:left; width: 170px; height: 20px; margin-top: 30px; margin-left: 20px; background-color: #ffa;}
+
+
+#coupang_login{width: 300px; height: 200px; background-color: #cca;}
+#log_in_box{width: 200px; height: 100px; background-color: #ccc;}

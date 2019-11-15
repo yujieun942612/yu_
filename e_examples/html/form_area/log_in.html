@@ -1,0 +1,95 @@
+	<!DOCTYPE html>
+  <!-- 문서이름.html -->
+  <html lang="ko-KR">
+  <head>
+    <noscript>
+      <p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다.<br />
+      자바스크립트의 기능을 활성화 해주세요.</p>
+      <p><a target="_blank"href="http://enable-javascript.com/ko/">자바스크립트 활성화 처리하기</a></p>
+    </noscript>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="웹페이지 실습에 따른 목차 구성">
+    <meta name="keyword" content="html,css,js,web,design,웹디자인,xido,시도웹">
+    <meta name="author" content="xido 강사">
+    <meta name="generator" content="illustrator,photoshop,sublimetext,vscode">
+  
+      <link rel="stylesheet" href="../../font/web_gyeonggi/stylesheet.css">
+      <link rel="stylesheet" href="../../css/base/reset.css">
+      <link rel="stylesheet" href="../../css/base/common.css">
+      <link rel="stylesheet" href="../../css/src/form_area/log_in.css">
+      <link rel="stylesheet" href="../../font/fontawesome/css/all.css">
+      <link rel="shorcut icon" herf="favicon.png" type="image/png">
+      <link rel="apple-touch-icon" herf="favicon.png" >	
+      <!--[if IE]>
+        <script src="../ie/html5shiv/dist/html5shiv.js"></script>
+        <script src="../ie/PIE/PIR.js"></script>
+        <script src="../ie/Respond/dest/respond.min.js"></script>
+      <![endif]-->
+  
+    <title>로그인기능 이해하기</title>
+  </head>
+  <body>
+    <!--layout====================================================================  -->
+    <div id="wrap">
+      <h1>회원가입</h1>
+      <div id="memberBox">
+          
+      <div class="sns_login">
+          <h2>소셜 로그인</h2>
+        <ul>
+          <li><a href="#"><i></i><span class="hidden">네이버 로그인</span></a></li>
+          <li><a href="#"><i class="fab fa-facebook"></i><span class="hidden">페이스북 로그인</span></a></li>
+          <li><a href="#"><i class="fab fa-google-plus-square"></i><span class="hidden">구글 로그인</span></a></li>
+        </ul>
+
+        <form action="#" method="post">
+
+         <fieldset>
+           <legend>log in</legend>
+           <div class="in_form">
+
+             <label for="userId" class="hidden">로그인 계정을 입력하세요.</label>
+             <input type="text" name="userId" id="userId" value="" 
+             placeholder="이메일/아이디">
+
+             <label for="userPw" class="hidden">계정에 대한 비밀번호를 입력하세요.</label>
+             <input type="password" name="userPw" id="userPw" value="" placeholder="비밀번호입력">
+           </div>
+
+           <div class="btn_form">
+             <!--<button type="submit">login</button>-->
+             <input type="submit" name="memberBtn" value="log in" />
+           </div>
+
+         </fieldset> 
+
+         <fieldset>
+           <legend>회원가입 및 계정찾기</legend>
+         <a href="#">회원가입</a>
+         <a href="#">아이디 및 비밀번호 찾기</a>
+         </fieldset>
+
+        </form>
+
+        <!--action은 연결하는 -->
+      </div>
+
+<!--=====================================================-->
+        
+        
+        <div class="join">
+            <h2>join</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- scropt======================================= -->
+      <script src="../../js/base/jquery-3.4.1.min.js"></script>
+      <script src="../../js/base/jquery-ui.min.js"></script>
+      <script src="../../js/src/jquery/jq_&.js"></script>
+
+  </body>
+  </html>

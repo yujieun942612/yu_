@@ -1,0 +1,125 @@
+	<!DOCTYPE html>
+  <!-- 문서이름.html -->
+  <html lang="ko-KR">
+  <head>
+    <noscript>
+      <p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다.<br />
+      자바스크립트의 기능을 활성화 해주세요.</p>
+      <p><a target="_blank"href="http://enable-javascript.com/ko/">자바스크립트 활성화 처리하기</a></p>
+    </noscript>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="웹페이지 실습에 따른 목차 구성">
+    <meta name="keyword" content="html,css,js,web,design,웹디자인,xido,시도웹">
+    <meta name="author" content="xido 강사">
+    <meta name="generator" content="illustrator,photoshop,sublimetext,vscode">
+      <link rel="stylesheet" href="../font/fontawesome/css/all.css">
+      
+      <link rel="stylesheet" href="../css/base/reset.css">
+      <link rel="stylesheet" href="../css/base/common.css">
+      <link rel="stylesheet" href="../css/slide_btn.css">
+      
+      <link rel="shorcut icon" herf="favicon.png" type="image/png">
+      <link rel="apple-touch-icon" herf="favicon.png" >	
+      <!--[if IE]>
+        <script src="../ie/html5shiv/dist/html5shiv.js"></script>
+        <script src="../ie/PIE/PIR.js"></script>
+        <script src="../ie/Respond/dest/respond.min.js"></script>
+      <![endif]-->
+  
+    <title>문서제목</title>
+  </head>
+  <body>
+    <!--layout====================================================================  -->
+    <div id="wrap">
+      <h1>slide button 기능</h1>
+
+      <div id="miniProduct">
+        <!-- <div class="btn">
+       <button type="button" class="next">
+         <i class="fas fa-angle-right"></i>
+         <span>다음내용보기</span>
+       </button>
+       <button type="button" class="prev">
+          <i class="fas fa-angle-left"></i>
+         <span>이전내용보기</span>
+       </button></div> -->
+        
+        <div class="product">
+          <ul>
+            <li class="product_01"><a href="#"><span>상품설명 01</span></a></li>
+            <li class="product_02"><a href="#"><span>상품설명 02</span></a></li>
+            <li class="product_03"><a href="#"><span>상품설명 03</span></a></li>
+          </ul>
+        </div>
+
+        <ul class="subSlide">
+          <li>001</li>
+          <li>002</li>
+          <li>003</li>
+          <li>004</li>
+          <li>005</li>
+          <li>006</li>
+          <li>007</li>
+          <li>008</li>
+          <li>009</li>
+          <li>010</li>
+        </ul>
+      </div>
+
+    
+    </div>
+    <!-- scropt======================================= -->
+      <script src="../js/base/jquery-3.4.1.min.js"></script>
+      <script src="../js/base/jquery-ui.min.js"></script>
+      <!--<script src="../js/src/slide_btn.js"></script>-->
+      <script src="../js/src/slide_plug_sample_01.js"></script>
+      
+      
+      <script>
+      (function($){
+        $('.subSlide').mySlide().fade();
+      })(jQuery);
+      </script>
+
+      <script>
+      /*let fn=function(n){
+       let rel =n+10; 
+       return rel;
+      }
+
+      console.log(fn(10));
+    */
+
+  /*
+  let t=function(n,r){
+
+   this.name=n,
+            this.rel=r}
+    //this : window, new 에의해 생성된 변수
+    //new  : 생성자(기존의 복제해서 새롭게 만드는)
+  
+  //let beforeT =t('xido');
+  //console.log(beforeT.name);
+
+//js 에서 new 이름을 붙이면
+// 기존의 기능을 복제처리해서 새로 생성한다는 의미
+//생성자
+
+
+  let myt =new t('xido','this란');
+  console.log(myt.name,myt.rel);
+  */
+  
+
+  
+      
+      </script>
+  </body>
+  </html>
+
+
+
+  
